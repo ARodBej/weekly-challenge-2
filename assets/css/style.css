@@ -18,159 +18,171 @@
     background-color: #FFA1A1;
     display: flex;
     width: 100%;
-    .nav-left {
-      flex: 1;
-      padding: 1rem;
-      margin-left: 30px;
-      .logo-container {
-        width: fit-content;
-        h4 {
-          font-weight: bold;
-          transition: .3s;
-          &:hover {
-            cursor: pointer;
-            transform: scale(1.1);
-          }
-        }
-      }
-    }
-    ul {
-      display: flex;
-      list-style: none;
-      margin-right: 30px;
-      a {
-        text-decoration: none;
-      }
-      li {
-        font-weight: bold;
-        padding: 1rem;
-        transition: .3s;
-        &:hover {
-          background-color: var(--secondary-color);
-          color: var(--primary-color);
-          cursor: pointer;
-        }
-      }
-    }
   }
+  .nav-left {
+    flex: 1;
+    padding: 1rem;
+    margin-left: 30px;
+  }
+
+  .logo-container {
+    width: fit-content;
+  }
+  .nav h4 {
+    font-weight: bold;
+    transition: .3s;
+  }
+  .nav h4:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+   }
   
+  /* nav right-section */
+  .nav-right ul {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+  }
+
+  .nav-right a {
+    text-decoration: none;
+  }
+  .nav-right li {
+    font-weight: bold;
+    padding: 1rem;
+    transition: .3s;
+  }
+  .nav-right li:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+  /* hero starts */
   .hero {
-    background-image: url(https://images.unsplash.com/photo-1555231955-348aa2312e19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+    background-image: url('./assets/images/cherry-blossom-branch.jpg');
     block-size: content-fit;
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    .overlay {
-      position: absolute;
-      background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 5%, rgba(0, 0, 0, 0) 70%);
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-    }
-    .hero-container {
-      padding: 7rem 2rem;
-      position: relative;
-      z-index: 2;
-      h1 {
-        font-weight: bold;
-        font-size: 4rem;
-      }
-      h3 {
-        font-weight: bold;
-        font-size: 2.5rem;
-      }
-      h4 {
-        font-weight: normal;
-        font-size: 2rem;
-      }
-      .line {
-        border: 3px solid white;
-        width: 5%;
-        margin: 1rem 0;
-      }
-      p {
-        font-weight: bold;
-        font-size: 1.4rem;
-      }
-      button {
-        margin-top: 1rem;
-        padding: .5rem;
-        width: 150px;
-        border: none;
-        border-radius: 5px;
-        background-color: var(--primary-color);
-        font-weight: bold;
-        font-size: 1.3rem;
-        transition: .3s;
-        &:hover {
-          transform: scale(1.1);
-          background-color: var(--secondary-color);
-          color: var(--primary-color);
-        }
-        &:active {
-          background-color: var(--primary-color);
-          color: white;
-          transition: .1s;
-        }
-      }
-    }
+  } 
+  .overlay {
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 5%, rgba(0, 0, 0,0) 70%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
-  
+   
+  .hero-container {
+    padding: 7rem 2rem;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-container h1 {
+    font-weight: bold;
+    font-size: 4rem;
+  }
+  .hero-container h3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .hero-container h4 {
+    font-weight: normal;
+    font-size: 2rem;
+  }
+  .line {
+    border: 3px solid white;
+    width: 5%;
+    margin: 1rem 0;
+  }
+  .line p {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  .line button {
+    margin-top: 1rem;
+    padding: .5rem;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: .3s;
+  }
+  .line button:hover {
+    transform: scale(1.1);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  .line button:active {
+    background-color: var(--primary-color);
+    color: white;
+    transition: .1s;
+  }
+      
+/* hero ends */
+
+/*about section starts */
   .about-section {
     display: inline-flex;
     padding: 2.5rem;
-    img {
-      width: 650px;
-      border-radius: 15px;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
-    }
-    .about-info-container {
-      display: flex;
-      align-items: center;
-      direction: rtl;
-    }
-    .about-line {
-      border: 3px solid var(--primary-color);
-      width:  90px;
-    }
-    h2, div, p {
-      margin: 1rem 0;
-    }
-    h2 {
-      font-size: 4rem;
-      font-weight: bold;
-      color: var(--primary-color);
-    }
-    p {
-      font-size: 1.4rem;
-      font-weight: bold;
-      width: 90%;
-      color: var(--alt-text);
-    }
   }
-  
+  .about-section img {
+    width: 650px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+  }
+  .about-info-container {
+    display: flex;
+    align-items: center;
+    direction: rtl;
+  }
+  .about-line {
+    border: 3px solid var(--primary-color);
+    width:  90px;
+  }
+  h2, div, p {
+    margin: 1rem 0;
+  }
+  h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 90%;
+    color: var(--alt-text);
+  }
+  /*about section end */
+
+  /*project section */
   .projects-section {
     background-color: var(--secondary-color);
     padding: 3rem;
     text-align: center;
-    button {
-      background-color: var(--primary-color);
-      border: none;
-      border-radius: 5px;
-      padding: .5rem 1rem;;
-      font-size: 1.4rem;
-      margin-top: 3rem;
-      transition: .3s;
-      font-weight: bold;
-      &:hover {
-        background-color: var(--tertiary-color);
-      }
-      &:active {
-        background-color: var(--primary-color);
-        transition: .1s;
-      }
-    }
+  }
+  .projects-section button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: .5rem 1rem;;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    transition: .3s;
+    font-weight: bold;
+  }
+  .projects-section button:hover {
+    background-color: var(--tertiary-color);
+  }
+  .projects-section button:active {
+    background-color: var(--primary-color);
+    transition: .1s;
+  }
+    
     h2 {
       font-weight: bold;
       font-size: 3rem;
@@ -184,7 +196,7 @@
         text-decoration: none;
       }
       .project-card {
-        background-image: url(https://images.unsplash.com/flagged/photo-1563536314719-2e812e896f50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+        background-image: url('./assets/images/working-at-coffee-shop.jpg');
         width: 400px;
         height: 200px;
         color: var(--alt-text);
@@ -216,7 +228,7 @@
   }
   
   .contact-section {
-    background-image: url(https://images.unsplash.com/photo-1519882189396-71f93cb4714b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+    background-image: url('./assets/images/many-cherry-blossoms.jpg');
     background-attachment: fixed;
     display: flex;
     justify-content: center;
