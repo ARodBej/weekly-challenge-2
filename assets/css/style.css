@@ -338,7 +338,8 @@
   .footer ul {
     display: flex;
     list-style: none;
-  }  
+  } 
+ 
   .footer-link {
     color: var(--primary-color);
     font-weight: bold;
@@ -353,10 +354,11 @@
      
   
   @media screen and (min-width: 1400px) {
-  
+
   .nav-left {
     padding: 0;
     margin: .5rem 0 0 2rem;
+
   }    
   .logo-container {
     display: flex;
@@ -375,9 +377,10 @@
   }
   .hero {
     background-size: cover;
+    
   }  
   .hero-container h1 {
-    font-weight: 900;
+    font-weight: 500;
     font-size: 6rem;
     line-height: 4.5rem;
   }
@@ -518,7 +521,7 @@
     height: 100%;
     color: var(--primary-color);
   }
-  /** utility classes **/
+   /** utility classes **/
   .hide {
     display: none;
   }
@@ -536,4 +539,5 @@
     transition: 5s;
     z-index: 200;
   }
-  }
+}
+  
